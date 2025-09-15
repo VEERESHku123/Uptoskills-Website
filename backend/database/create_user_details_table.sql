@@ -20,3 +20,4 @@ CREATE INDEX IF NOT EXISTS idx_user_details_full_name ON user_details(full_name)
 -- Grant permissions to team user (adjust username as needed)
 GRANT SELECT, INSERT, UPDATE ON user_details TO team_user;
 GRANT USAGE, SELECT ON SEQUENCE user_details_id_seq TO team_user;
+
